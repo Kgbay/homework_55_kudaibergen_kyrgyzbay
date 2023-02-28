@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}Task{% endblock %}
+{% block content %}
+     <div class="container">
+          <h1>Подробнее о задании # {{ task.id }}</h1>
+          <p>Заголовок: {{ task.title }}</p>
+          <p>Статус: {{ task.status }}</p>
+          <p>Автор: {{ task.author }}</p>
+          <p>Срок выполнения: {{ task.custom_date }}</p>
+          <p>Полное описание: {{ task.full_desc }}</p>
+          <a href="{% url 'index' %}" class="btn btn-primary">Назад</a>
+     </div>
+{% endblock content %}

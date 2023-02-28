@@ -1,0 +1,24 @@
+.container {
+    background: #FFD873;
+    border-radius: 15px 50px 30px;
+    padding: 20px;
+    font-family: 'Lora', serif;
+    margin-top: 10px;
+}
+.task-2 {
+    padding-top: 20px;
+    margin: 10px;
+    background: #8070D8;
+    border-radius: 15px;
+}
+.task-text {
+    padding-left: 5px;
+    color: white;
+}
+.form-comp {
+    margin-top: 10px;
+}
+select {
+    width: 200%;
+}
+
