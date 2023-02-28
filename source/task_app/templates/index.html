@@ -11,7 +11,6 @@
                     <h2 class="task-text">Заголовок: {{ task.title }}</h2>
                     <h2 class="task-text">Статус: {{ task.status }}</h2>
                     <a href="{% url 'detail_view' task.pk %}" class="btn btn-primary">Подробнее</a>
-                    <a href="{% url 'remove_view' task.pk%}" onclick="alert('Удалить данные?')" class="btn btn-primary">Удалить</a>
                     <p></p>
                 </div>
 
