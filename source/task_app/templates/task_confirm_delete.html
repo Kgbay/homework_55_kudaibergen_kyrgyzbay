@@ -1,10 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'base.html' %}
+{% block title %}Подтверждение удаления{% endblock %}
+{% block menu %}
+{% endblock %}
+{% block content %}
+    <div class="container">
+        <h1>Вы уверены что хотите удалить выбранные данные?</h1>
+        <p>Заголовок: {{ task.title }}</p>
+        <p>Описание: {{ task.full_desc }}</p>
 
-</body>
-</html>
+        <form action="{% url 'confirm_delete' task.pk %}" method="post">
+          {% csrf_token %}
+          <p><input type="submit" value="Удалить"></p>
+          <p><a href="{% url 'index' %}">Отмена</a></p>
+        </form>
+
+    </div>
+{% endblock %}

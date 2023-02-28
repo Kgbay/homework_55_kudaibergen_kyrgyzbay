@@ -1,10 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% csrf_token %}
+<div class="form-comp">
+    <label for="title">Заголовок</label>
+    <input type="text" id="title" name="title" required class="form-control form-control-lg">
+</div>
 
-</body>
-</html>
+<div class="form-comp">
+    <label for="status">Статус</label>
+    <select id="status" name="status" class="form-control form-control-lg">
+        {% for choice in choices %}
+            <option value="{{ choice.0 }}">{{ choice.1 }}</option>
+        {% endfor %}
+    </select>
+</div>
+
+<div class="form-comp">
+    <label for="custom_date">Дата</label>
+    <input type="date" id="custom_date" name="custom_date" class="form-control form-control-lg">
+</div>
+
+<div class="form-comp">
+    <label for="author">Автор</label>
+    <input type="text" id="author" name="author" required class="form-control form-control-lg">
+</div>
+
+<div class="form-comp">
+    <label for="full_desc">Полное описание</label>
+    <textarea id="full_desc" name="full_desc" required class="form-control form-control-lg"></textarea>
+</div>
+
+<div class="form-comp">
+    <input type="submit"  value="Отправить">
+</div>
