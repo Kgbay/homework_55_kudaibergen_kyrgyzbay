@@ -3,39 +3,45 @@
   "model": "task_app.task",
   "pk": 54,
   "fields": {
-    "title": "Разработка",
+    "title": "Разработка игр на ПК",
     "full_desc": "Разработать программное обеспечение",
-    "status": "ACTIVE",
+    "status": "Not active",
     "author": "Кудайберген",
     "custom_date": "2023-02-16",
     "created_at": "2023-02-17T06:16:42.195Z",
-    "updated_at": "2023-02-17T06:16:42.195Z"
-  }
-},
-{
-  "model": "task_app.task",
-  "pk": 55,
-  "fields": {
-    "title": "Убратьсы дома",
-    "full_desc": "Надо убраться дома",
-    "status": "NOT_ACTIVE",
-    "author": "Мадина",
-    "custom_date": "2023-02-08",
-    "created_at": "2023-02-17T06:17:16.520Z",
-    "updated_at": "2023-02-17T06:17:16.520Z"
+    "updated_at": "2023-02-28T03:05:04.840Z",
+    "is_deleted": false,
+    "deleted_at": null
   }
 },
 {
   "model": "task_app.task",
   "pk": 57,
   "fields": {
-    "title": "Изучить английский",
-    "full_desc": "Изучить грамматику английского",
-    "status": "ACTIVE",
+    "title": "Изучить испанский",
+    "full_desc": "Изучить грамматику испанского",
+    "status": "Not active",
     "author": "Кука",
     "custom_date": "2023-02-08",
     "created_at": "2023-02-17T07:02:38.177Z",
-    "updated_at": "2023-02-17T07:02:38.177Z"
+    "updated_at": "2023-02-28T03:06:36.617Z",
+    "is_deleted": false,
+    "deleted_at": null
+  }
+},
+{
+  "model": "task_app.task",
+  "pk": 58,
+  "fields": {
+    "title": "Camping",
+    "full_desc": "Mountain",
+    "status": "Active",
+    "author": "Kuka",
+    "custom_date": "2023-02-07",
+    "created_at": "2023-02-17T08:39:12.196Z",
+    "updated_at": "2023-02-28T03:26:01.425Z",
+    "is_deleted": false,
+    "deleted_at": null
   }
 },
 {
