@@ -34,12 +34,16 @@ def detail_view(request, pk):
     })
 
 
-def remove_view(request, pk):
+def delete_view(request, pk):
     task = get_object_or_404(Task, pk=pk)
     return render(request, 'task_confirm_delete.html', context={'task': task})
 
-def confirm_delete_view():
-    pass
+
+def confirm_delete_view(request, pk):
+    task = get_object_or_404(Task, pk=pk)
+    task.delete()
+    return redirect('index')
+
 
 def update_view(request, pk):
     task = get_object_or_404(Task, pk=pk)

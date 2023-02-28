@@ -21,4 +21,7 @@
 select {
     width: 200%;
 }
+.confirm-delete-form {
+    border-color: green !important;
+}
 

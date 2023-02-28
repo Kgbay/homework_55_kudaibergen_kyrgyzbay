@@ -5,7 +5,7 @@ from task_app.models import Task
 
 # index view
 def index_view(request: WSGIRequest):
-    tasks = Task.objects.all()
+    tasks = Task.objects.exclude(is_deleted=True)
     context = {
         'tasks': tasks
     }

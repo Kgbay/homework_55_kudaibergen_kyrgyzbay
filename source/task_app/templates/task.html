@@ -9,7 +9,7 @@
           <p>Срок выполнения: {{ task.custom_date }}</p>
           <p>Полное описание: {{ task.full_desc }}</p>
           <a href="{% url 'index' %}" class="btn btn-primary">Назад</a>
-          <a href="{% url 'remove_view' task.pk %}" class="btn btn-primary">Удалить</a>
+          <a href="{% url 'delete_task' task.pk %}" class="btn btn-primary">Удалить</a>
           <a href="{% url 'task_update' task.pk %}" class="btn btn-primary">Редактировать</a>
      </div>
 {% endblock content %}

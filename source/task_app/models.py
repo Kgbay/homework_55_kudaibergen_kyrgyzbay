@@ -16,6 +16,10 @@ class Task(models.Model):
     custom_date = models.DateField(verbose_name="custom_date", null=False, default=timezone.now())
     created_at = models.DateTimeField(auto_now_add=True, verbose_name="Дата и время создания")
     updated_at = models.DateTimeField(auto_now=True, verbose_name="Дата и время обновления")
+    is_deleted = models.BooleanField(verbose_name='удалено', null=False, default=False)
+    deleted_at = models.DateTimeField(verbose_name='Дата и время удаления', null=True, default=None)
+
+
 
     def __str__(self):
         return f"{self.author} - {self.title}"

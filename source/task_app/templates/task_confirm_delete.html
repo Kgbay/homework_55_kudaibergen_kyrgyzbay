@@ -8,10 +8,10 @@
         <p>Заголовок: {{ task.title }}</p>
         <p>Описание: {{ task.full_desc }}</p>
 
-        <form action="{% url 'confirm_delete' task.pk %}" method="post">
+        <form action="{% url 'confirm_delete' task.pk %}" method="post" class="confirm-delete-form">
           {% csrf_token %}
-          <p><input type="submit" value="Удалить"></p>
-          <p><a href="{% url 'index' %}">Отмена</a></p>
+          <input type="submit" value="Удалить" class="btn btn-primary">
+          <a href="{% url 'index' %}" class="btn btn-primary">Отмена</a>
         </form>
 
     </div>
